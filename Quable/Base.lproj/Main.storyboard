@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Loading View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="LoadingViewController" customModule="Quable" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m8E-Mg-ATK" customClass="NVActivityIndicatorView" customModule="NVActivityIndicatorView">
+                                <rect key="frame" x="143.5" y="289.5" width="88" height="88"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="88" id="iIl-WW-EDx"/>
+                                    <constraint firstAttribute="width" constant="88" id="qnU-p4-VN7"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="typeName" value="ballScaleMultiple"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="m8E-Mg-ATK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3Ru-wN-shg"/>
+                            <constraint firstItem="m8E-Mg-ATK" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="82f-HM-msN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicatorView" destination="m8E-Mg-ATK" id="Qj8-mA-KNP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="543" y="28"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="LAw-R7-nqQ">
+            <objects>
+                <viewController storyboardIdentifier="MainViewController" id="XaE-P0-FdI" customClass="MainViewController" customModule="Quable" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="O9C-Dj-XQy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kdQ-MP-MTK">
+                                <rect key="frame" x="16" y="311.5" width="343" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="ZPd-lO-Akr"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="decimalPad" returnKeyType="done"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wsR-Tz-e7c">
+                                <rect key="frame" x="16" y="233.5" width="45" height="30"/>
+                                <state key="normal" title="Health"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SyH-QO-PRr">
+                                <rect key="frame" x="172" y="233.5" width="30" height="30"/>
+                                <state key="normal" title="Fun"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fpQ-1X-4Eb">
+                                <rect key="frame" x="319" y="233.5" width="40" height="30"/>
+                                <state key="normal" title="Other"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="kf3-ED-iDu" firstAttribute="trailing" secondItem="kdQ-MP-MTK" secondAttribute="trailing" constant="16" id="11A-11-Y08"/>
+                            <constraint firstItem="kdQ-MP-MTK" firstAttribute="top" secondItem="SyH-QO-PRr" secondAttribute="bottom" constant="48" id="Ue5-eS-4Ii"/>
+                            <constraint firstItem="kdQ-MP-MTK" firstAttribute="centerY" secondItem="O9C-Dj-XQy" secondAttribute="centerY" id="YG4-mf-J6d"/>
+                            <constraint firstItem="wsR-Tz-e7c" firstAttribute="leading" secondItem="kf3-ED-iDu" secondAttribute="leading" constant="16" id="cCA-Vt-4zh"/>
+                            <constraint firstItem="SyH-QO-PRr" firstAttribute="centerX" secondItem="O9C-Dj-XQy" secondAttribute="centerX" id="dUu-Kp-gQc"/>
+                            <constraint firstItem="kdQ-MP-MTK" firstAttribute="top" secondItem="wsR-Tz-e7c" secondAttribute="bottom" constant="48" id="kS1-Z4-QCK"/>
+                            <constraint firstItem="kf3-ED-iDu" firstAttribute="trailing" secondItem="fpQ-1X-4Eb" secondAttribute="trailing" constant="16" id="nXV-XL-cKF"/>
+                            <constraint firstItem="kdQ-MP-MTK" firstAttribute="top" secondItem="fpQ-1X-4Eb" secondAttribute="bottom" constant="48" id="njj-qc-Z6K"/>
+                            <constraint firstItem="kdQ-MP-MTK" firstAttribute="leading" secondItem="kf3-ED-iDu" secondAttribute="leading" constant="16" id="xp8-Hj-Kzy"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="kf3-ED-iDu"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c67-LQ-EZs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1392.8" y="26.53673163418291"/>
+        </scene>
+    </scenes>
+</document>

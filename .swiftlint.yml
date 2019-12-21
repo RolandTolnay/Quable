@@ -1,0 +1,8 @@
+excluded:
+  - Pods
+disabled_rules:
+  - todo
+  - switch_case_alignment
+  - cyclomatic_complexity
+  - trailing_whitespace
+  - empty_parentheses_with_trailing_closure

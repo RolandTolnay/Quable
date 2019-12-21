@@ -1,0 +1,629 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3681B1584E9DE505FEB379FD /* Pods_Quable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B2641D0D7C12593E96793A9 /* Pods_Quable.framework */; };
+		AF1F4282201739C700ECE2C7 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1F4281201739C700ECE2C7 /* Category.swift */; };
+		AF1F428420173BD800ECE2C7 /* Expense.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1F428320173BD800ECE2C7 /* Expense.swift */; };
+		AF1F428820174E5E00ECE2C7 /* Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1F428720174E5E00ECE2C7 /* Formatter.swift */; };
+		AF2296BF20171E0400820058 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2296BE20171E0400820058 /* MainViewController.swift */; };
+		AF3D955920160CA300CCBA47 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = AF3D955820160CA300CCBA47 /* .swiftlint.yml */; };
+		AF3D955C20160EC900CCBA47 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3D955B20160EC900CCBA47 /* AppState.swift */; };
+		AF3D955F20160F2100CCBA47 /* AppReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3D955E20160F2100CCBA47 /* AppReducer.swift */; };
+		AF3D956220160FDF00CCBA47 /* Middleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3D956120160FDF00CCBA47 /* Middleware.swift */; };
+		AF3D95692016134800CCBA47 /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3D95682016134800CCBA47 /* Authentication.swift */; };
+		AF3D956B201614FB00CCBA47 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3D956A201614FB00CCBA47 /* Result.swift */; };
+		AF3D956D20161E8C00CCBA47 /* ServiceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3D956C20161E8C00CCBA47 /* ServiceFactory.swift */; };
+		AF3D956F20161F0F00CCBA47 /* ProviderFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3D956E20161F0F00CCBA47 /* ProviderFactory.swift */; };
+		AF3D957120161F3C00CCBA47 /* ServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3D957020161F3C00CCBA47 /* ServiceProvider.swift */; };
+		AF3D957420161FFA00CCBA47 /* FirebaseFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3D957320161FFA00CCBA47 /* FirebaseFactory.swift */; };
+		AF3D95762016204100CCBA47 /* FirebaseAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3D95752016204100CCBA47 /* FirebaseAuthentication.swift */; };
+		AF3D95782016274600CCBA47 /* AuthActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3D95772016274600CCBA47 /* AuthActions.swift */; };
+		AF3D957A20162E5700CCBA47 /* AuthState.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3D957920162E5700CCBA47 /* AuthState.swift */; };
+		AF3D957C20163DFF00CCBA47 /* AuthReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3D957B20163DFF00CCBA47 /* AuthReducer.swift */; };
+		AFB3E6BC201607C5000D3DCC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB3E6BB201607C5000D3DCC /* AppDelegate.swift */; };
+		AFB3E6BE201607C5000D3DCC /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB3E6BD201607C5000D3DCC /* LoadingViewController.swift */; };
+		AFB3E6C1201607C5000D3DCC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFB3E6BF201607C5000D3DCC /* Main.storyboard */; };
+		AFB3E6C3201607C5000D3DCC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFB3E6C2201607C5000D3DCC /* Assets.xcassets */; };
+		AFB3E6C6201607C5000D3DCC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFB3E6C4201607C5000D3DCC /* LaunchScreen.storyboard */; };
+		AFB3E6E0201609C9000D3DCC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AFB3E6DF201609C9000D3DCC /* GoogleService-Info.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3B2641D0D7C12593E96793A9 /* Pods_Quable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Quable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D6F1A48AE8106739DC1CA53 /* Pods-QuableTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuableTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-QuableTests/Pods-QuableTests.release.xcconfig"; sourceTree = "<group>"; };
+		646806B735570E491D0D19FF /* Pods-Quable.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quable.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Quable/Pods-Quable.debug.xcconfig"; sourceTree = "<group>"; };
+		7992625D97F2FCFE57AF7BDE /* Pods-Quable.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quable.release.xcconfig"; path = "Pods/Target Support Files/Pods-Quable/Pods-Quable.release.xcconfig"; sourceTree = "<group>"; };
+		AF1F4281201739C700ECE2C7 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		AF1F428320173BD800ECE2C7 /* Expense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expense.swift; sourceTree = "<group>"; };
+		AF1F428720174E5E00ECE2C7 /* Formatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formatter.swift; sourceTree = "<group>"; };
+		AF2296BE20171E0400820058 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		AF3D955820160CA300CCBA47 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = SOURCE_ROOT; };
+		AF3D955B20160EC900CCBA47 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		AF3D955E20160F2100CCBA47 /* AppReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppReducer.swift; sourceTree = "<group>"; };
+		AF3D956120160FDF00CCBA47 /* Middleware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Middleware.swift; sourceTree = "<group>"; };
+		AF3D95682016134800CCBA47 /* Authentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authentication.swift; sourceTree = "<group>"; };
+		AF3D956A201614FB00CCBA47 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		AF3D956C20161E8C00CCBA47 /* ServiceFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceFactory.swift; sourceTree = "<group>"; };
+		AF3D956E20161F0F00CCBA47 /* ProviderFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProviderFactory.swift; sourceTree = "<group>"; };
+		AF3D957020161F3C00CCBA47 /* ServiceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProvider.swift; sourceTree = "<group>"; };
+		AF3D957320161FFA00CCBA47 /* FirebaseFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseFactory.swift; sourceTree = "<group>"; };
+		AF3D95752016204100CCBA47 /* FirebaseAuthentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAuthentication.swift; sourceTree = "<group>"; };
+		AF3D95772016274600CCBA47 /* AuthActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthActions.swift; sourceTree = "<group>"; };
+		AF3D957920162E5700CCBA47 /* AuthState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthState.swift; sourceTree = "<group>"; };
+		AF3D957B20163DFF00CCBA47 /* AuthReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthReducer.swift; sourceTree = "<group>"; };
+		AFB3E6B8201607C5000D3DCC /* Quable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quable.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFB3E6BB201607C5000D3DCC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AFB3E6BD201607C5000D3DCC /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
+		AFB3E6C0201607C5000D3DCC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AFB3E6C2201607C5000D3DCC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AFB3E6C5201607C5000D3DCC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AFB3E6C7201607C5000D3DCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFB3E6D2201607C5000D3DCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFB3E6DF201609C9000D3DCC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C0709EE940EEDA4F97BDE140 /* Pods-QuableTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuableTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QuableTests/Pods-QuableTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D2401E0036A97E4C322E3B24 /* Pods_QuableTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuableTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AFB3E6B5201607C5000D3DCC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3681B1584E9DE505FEB379FD /* Pods_Quable.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		871D635D72610AD1816FA46C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3B2641D0D7C12593E96793A9 /* Pods_Quable.framework */,
+				D2401E0036A97E4C322E3B24 /* Pods_QuableTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AF1F428620174E4C00ECE2C7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AF1F428720174E5E00ECE2C7 /* Formatter.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		AF3D955A20160E2F00CCBA47 /* State */ = {
+			isa = PBXGroup;
+			children = (
+				AF3D955B20160EC900CCBA47 /* AppState.swift */,
+				AF3D957920162E5700CCBA47 /* AuthState.swift */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		AF3D955D20160F0700CCBA47 /* Reducers */ = {
+			isa = PBXGroup;
+			children = (
+				AF3D955E20160F2100CCBA47 /* AppReducer.swift */,
+				AF3D957B20163DFF00CCBA47 /* AuthReducer.swift */,
+			);
+			path = Reducers;
+			sourceTree = "<group>";
+		};
+		AF3D956020160F4D00CCBA47 /* Middleware */ = {
+			isa = PBXGroup;
+			children = (
+				AF3D956120160FDF00CCBA47 /* Middleware.swift */,
+			);
+			path = Middleware;
+			sourceTree = "<group>";
+		};
+		AF3D95632016107100CCBA47 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AFB3E6BD201607C5000D3DCC /* LoadingViewController.swift */,
+				AF2296BE20171E0400820058 /* MainViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		AF3D95642016108700CCBA47 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AF1F428620174E4C00ECE2C7 /* Extensions */,
+				AF3D956A201614FB00CCBA47 /* Result.swift */,
+				AF1F4281201739C700ECE2C7 /* Category.swift */,
+				AF1F428320173BD800ECE2C7 /* Expense.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AF3D9565201610D800CCBA47 /* Redux */ = {
+			isa = PBXGroup;
+			children = (
+				AF3D955A20160E2F00CCBA47 /* State */,
+				AF3D9566201610ED00CCBA47 /* Actions */,
+				AF3D955D20160F0700CCBA47 /* Reducers */,
+				AF3D956020160F4D00CCBA47 /* Middleware */,
+			);
+			path = Redux;
+			sourceTree = "<group>";
+		};
+		AF3D9566201610ED00CCBA47 /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				AF3D95772016274600CCBA47 /* AuthActions.swift */,
+			);
+			path = Actions;
+			sourceTree = "<group>";
+		};
+		AF3D95672016110200CCBA47 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				AF3D95682016134800CCBA47 /* Authentication.swift */,
+				AF3D956C20161E8C00CCBA47 /* ServiceFactory.swift */,
+				AF3D957220161FE000CCBA47 /* FirebaseProvider */,
+				AF3D956E20161F0F00CCBA47 /* ProviderFactory.swift */,
+				AF3D957020161F3C00CCBA47 /* ServiceProvider.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		AF3D957220161FE000CCBA47 /* FirebaseProvider */ = {
+			isa = PBXGroup;
+			children = (
+				AF3D95752016204100CCBA47 /* FirebaseAuthentication.swift */,
+				AF3D957320161FFA00CCBA47 /* FirebaseFactory.swift */,
+			);
+			path = FirebaseProvider;
+			sourceTree = "<group>";
+		};
+		AFB3E6AF201607C5000D3DCC = {
+			isa = PBXGroup;
+			children = (
+				AFB3E6BA201607C5000D3DCC /* Quable */,
+				AFB3E6CF201607C5000D3DCC /* QuableTests */,
+				AFB3E6B9201607C5000D3DCC /* Products */,
+				FCE140E89D35E85F6EF1748A /* Pods */,
+				871D635D72610AD1816FA46C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AFB3E6B9201607C5000D3DCC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AFB3E6B8201607C5000D3DCC /* Quable.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AFB3E6BA201607C5000D3DCC /* Quable */ = {
+			isa = PBXGroup;
+			children = (
+				AFB3E6BB201607C5000D3DCC /* AppDelegate.swift */,
+				AF3D95642016108700CCBA47 /* Model */,
+				AF3D95672016110200CCBA47 /* Services */,
+				AF3D9565201610D800CCBA47 /* Redux */,
+				AF3D95632016107100CCBA47 /* View Controllers */,
+				AFB3E6BF201607C5000D3DCC /* Main.storyboard */,
+				AFB3E6DE20160943000D3DCC /* Supporting Files */,
+			);
+			path = Quable;
+			sourceTree = "<group>";
+		};
+		AFB3E6CF201607C5000D3DCC /* QuableTests */ = {
+			isa = PBXGroup;
+			children = (
+				AFB3E6D2201607C5000D3DCC /* Info.plist */,
+			);
+			path = QuableTests;
+			sourceTree = "<group>";
+		};
+		AFB3E6DE20160943000D3DCC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AF3D955820160CA300CCBA47 /* .swiftlint.yml */,
+				AFB3E6C2201607C5000D3DCC /* Assets.xcassets */,
+				AFB3E6C7201607C5000D3DCC /* Info.plist */,
+				AFB3E6C4201607C5000D3DCC /* LaunchScreen.storyboard */,
+				AFB3E6DF201609C9000D3DCC /* GoogleService-Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FCE140E89D35E85F6EF1748A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				646806B735570E491D0D19FF /* Pods-Quable.debug.xcconfig */,
+				7992625D97F2FCFE57AF7BDE /* Pods-Quable.release.xcconfig */,
+				C0709EE940EEDA4F97BDE140 /* Pods-QuableTests.debug.xcconfig */,
+				3D6F1A48AE8106739DC1CA53 /* Pods-QuableTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AFB3E6B7201607C5000D3DCC /* Quable */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFB3E6D5201607C5000D3DCC /* Build configuration list for PBXNativeTarget "Quable" */;
+			buildPhases = (
+				26B8C0B0BC77371193D1625D /* [CP] Check Pods Manifest.lock */,
+				AFB3E6B4201607C5000D3DCC /* Sources */,
+				AFB3E6B5201607C5000D3DCC /* Frameworks */,
+				AFB3E6B6201607C5000D3DCC /* Resources */,
+				68660B112EF70DE46BD4DA0D /* [CP] Embed Pods Frameworks */,
+				5FEBB9DD956279AB4DE6B8B1 /* [CP] Copy Pods Resources */,
+				AF3D955520160BBA00CCBA47 /* SwiftLint */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Quable;
+			productName = Quable;
+			productReference = AFB3E6B8201607C5000D3DCC /* Quable.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AFB3E6B0201607C5000D3DCC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Roland Tolnay";
+				TargetAttributes = {
+					AFB3E6B7201607C5000D3DCC = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = AFB3E6B3201607C5000D3DCC /* Build configuration list for PBXProject "Quable" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AFB3E6AF201607C5000D3DCC;
+			productRefGroup = AFB3E6B9201607C5000D3DCC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AFB3E6B7201607C5000D3DCC /* Quable */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AFB3E6B6201607C5000D3DCC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF3D955920160CA300CCBA47 /* .swiftlint.yml in Resources */,
+				AFB3E6C6201607C5000D3DCC /* LaunchScreen.storyboard in Resources */,
+				AFB3E6E0201609C9000D3DCC /* GoogleService-Info.plist in Resources */,
+				AFB3E6C3201607C5000D3DCC /* Assets.xcassets in Resources */,
+				AFB3E6C1201607C5000D3DCC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		26B8C0B0BC77371193D1625D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Quable-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5FEBB9DD956279AB4DE6B8B1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Quable/Pods-Quable-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		68660B112EF70DE46BD4DA0D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Quable/Pods-Quable-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
+				"${BUILT_PRODUCTS_DIR}/ChameleonFramework/ChameleonFramework.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/ReSwift/ReSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-ProtoRPC/ProtoRPC.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-RxLibrary/RxLibrary.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChameleonFramework.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProtoRPC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxLibrary.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Quable/Pods-Quable-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AF3D955520160BBA00CCBA47 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AFB3E6B4201607C5000D3DCC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF3D956D20161E8C00CCBA47 /* ServiceFactory.swift in Sources */,
+				AF3D956F20161F0F00CCBA47 /* ProviderFactory.swift in Sources */,
+				AF3D957420161FFA00CCBA47 /* FirebaseFactory.swift in Sources */,
+				AF3D956220160FDF00CCBA47 /* Middleware.swift in Sources */,
+				AF3D95782016274600CCBA47 /* AuthActions.swift in Sources */,
+				AF3D955C20160EC900CCBA47 /* AppState.swift in Sources */,
+				AF1F428420173BD800ECE2C7 /* Expense.swift in Sources */,
+				AF3D957C20163DFF00CCBA47 /* AuthReducer.swift in Sources */,
+				AF2296BF20171E0400820058 /* MainViewController.swift in Sources */,
+				AFB3E6BE201607C5000D3DCC /* LoadingViewController.swift in Sources */,
+				AF3D955F20160F2100CCBA47 /* AppReducer.swift in Sources */,
+				AF3D95762016204100CCBA47 /* FirebaseAuthentication.swift in Sources */,
+				AF1F4282201739C700ECE2C7 /* Category.swift in Sources */,
+				AF3D957120161F3C00CCBA47 /* ServiceProvider.swift in Sources */,
+				AF3D956B201614FB00CCBA47 /* Result.swift in Sources */,
+				AFB3E6BC201607C5000D3DCC /* AppDelegate.swift in Sources */,
+				AF3D95692016134800CCBA47 /* Authentication.swift in Sources */,
+				AF3D957A20162E5700CCBA47 /* AuthState.swift in Sources */,
+				AF1F428820174E5E00ECE2C7 /* Formatter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AFB3E6BF201607C5000D3DCC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AFB3E6C0201607C5000D3DCC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AFB3E6C4201607C5000D3DCC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AFB3E6C5201607C5000D3DCC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AFB3E6D3201607C5000D3DCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AFB3E6D4201607C5000D3DCC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AFB3E6D6201607C5000D3DCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 646806B735570E491D0D19FF /* Pods-Quable.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 32MK5V2NGT;
+				INFOPLIST_FILE = "$(SRCROOT)/Quable/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.rolandtolnay.Quable;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AFB3E6D7201607C5000D3DCC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7992625D97F2FCFE57AF7BDE /* Pods-Quable.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 32MK5V2NGT;
+				INFOPLIST_FILE = "$(SRCROOT)/Quable/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.rolandtolnay.Quable;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AFB3E6B3201607C5000D3DCC /* Build configuration list for PBXProject "Quable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFB3E6D3201607C5000D3DCC /* Debug */,
+				AFB3E6D4201607C5000D3DCC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AFB3E6D5201607C5000D3DCC /* Build configuration list for PBXNativeTarget "Quable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFB3E6D6201607C5000D3DCC /* Debug */,
+				AFB3E6D7201607C5000D3DCC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AFB3E6B0201607C5000D3DCC /* Project object */;
+}
